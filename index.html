@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./CSS Form Assignment_files/css2" rel="stylesheet">
+    <style>
+        body {
+  background-color: #343434;
+  font-family: "Noto Sans", sans-serif;
+}
+.form input {
+  padding: 20px 0 10px;
+}
+.form input,
+.form textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #adb5bd;
+  background-color: #343434;
+  color: #fff;
+  outline: none;
+  width: 350px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;  
+  transition: all 0.3s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #adb5bd;
+  font-size: 16px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  transition: all 0.3s;
+}
+
+.form textarea {
+  padding: 10px 0;
+  resize: none;
+  overflow: hidden;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-bottom: 1px solid #007fff;
+  padding-left: 10px;
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
+  color: #0080ffee;
+}
+
+#btn-submit,
+#btn-reset {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#btn-submit {
+  color: #fff;
+  background-color: #007fff;
+  margin-right: 10px;
+}
+
+#btn-submit:hover {
+  background-color: #fff;
+  color: #007fff;
+  cursor: pointer;
+}
+
+#btn-reset:hover {
+  color: #fff;
+  background-color: #007fff;
+  cursor: pointer;
+}
+
+    </style>
+  </head>
+  <body>
+    <br>
+    <br><br>
+    <br><br>
+    <center>
+      <div class="form">
+          <input type="text" name="name" placeholder="Name">
+          <br>
+          <br>
+          <input type="email" name="email" placeholder="Email">
+          <br>
+          <br>
+          <input type="password" name="" placeholder="Password">
+          <br>
+          <br>
+          <input type="number" placeholder="Number">
+          <br>
+          <br>
+          <br>
+          <textarea name="message" cols="30" rows="4" placeholder="Message"></textarea>
+          <br><br><br>
+          <button type="submit" id="btn-submit">SUBMIT</button>
+          <button type="reset" id="btn-reset">CANCEL</button>
+        </form>
+      </div>
+    </center>
+</body></html>
